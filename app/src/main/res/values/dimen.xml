@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="marker_dimension" type="dimen">28dp</item>
+    <item name="marker_padding" type="dimen">2dp</item>
+</resources>

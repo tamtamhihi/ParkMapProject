@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">190128525496-63g7i8pebeo754sp5hd3sqin923ok7gh.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://mapsautocomplete-62e2c.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">190128525496</string>
+    <string name="google_api_key" translatable="false">AIzaSyC0kAEKMRAtiRzL1NG3iwWPUdeF29bWkZ8</string>
+    <string name="google_app_id" translatable="false">1:190128525496:android:89bd52fff4553a65d6244d</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyC0kAEKMRAtiRzL1NG3iwWPUdeF29bWkZ8</string>
+    <string name="google_storage_bucket" translatable="false">mapsautocomplete-62e2c.appspot.com</string>
+    <string name="project_id" translatable="false">mapsautocomplete-62e2c</string>
+</resources>

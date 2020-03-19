@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="AppDialog" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="cornerRadius">36dp</item>
+        <item name="windowActionBar">true</item>
+    </style>
+
+    <style name="CustomAlertDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@color/colorPrimary</item>
+    </style>
+    <style name="CustomCollapsedText" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+    <style name="CustomExpandedText" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="fontFamily">@font/source_sans_pro</item>
+        <item name="background">@color/colorPrimary</item>
+        <item name="collapsedTitleTextAppearance">@style/CustomCollapsedText</item>
+        <item name="backgroundColor">@color/colorPrimary</item>
+    </style>
+
+</resources>

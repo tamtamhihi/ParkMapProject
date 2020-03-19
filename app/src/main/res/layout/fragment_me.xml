@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.me.MeFragment">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_avatar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_above="@+id/user_name"
+        android:layout_centerHorizontal="true"
+        android:outlineAmbientShadowColor="@color/colorPrimary"
+        android:paddingBottom="8dp"
+        android:src="@drawable/default_avatar"
+        app:civ_border_color="@color/quantum_grey"
+        app:civ_border_overlay="true"
+        app:civ_border_width="2dp" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/me_menu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/source_sans_pro"
+        android:text="Tam Ngoc Bang Nguyen"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/me_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="8dp"
+        android:background="@color/colorPrimary"
+        android:backgroundTint="@color/quantum_grey"
+        android:dividerPadding="2dp"
+        android:layoutMode="clipBounds"
+        android:orientation="vertical"
+        android:outlineProvider="bounds"
+        android:showDividers="middle">
+
+        <RelativeLayout
+            android:id="@+id/language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="@android:color/white">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/source_sans_pro"
+                android:padding="8dp"
+                android:paddingRight="8dp"
+                android:text="@string/me_language"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/next_icon"
+                android:elevation="10dp"
+                android:padding="8dp"
+                android:src="@drawable/ic_next"
+                android:tint="@color/colorPrimary" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/theme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="@android:color/white">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/source_sans_pro"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:paddingRight="8dp"
+                android:text="@string/me_color_mode"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/next_icon"
+                android:elevation="10dp"
+                android:padding="8dp"
+                android:src="@drawable/ic_next"
+                android:tint="@color/colorPrimary" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/feedback_option"
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="@android:color/white">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/source_sans_pro"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:paddingRight="8dp"
+                android:text="@string/me_feedback"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/next_icon"
+                android:elevation="10dp"
+                android:padding="8dp"
+                android:src="@drawable/ic_next"
+                android:tint="@color/colorPrimary" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/about_us"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/source_sans_pro"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/me_about_us"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/next_icon"
+                android:elevation="10dp"
+                android:padding="8dp"
+                android:src="@drawable/ic_next"
+                android:tint="@color/colorPrimary" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

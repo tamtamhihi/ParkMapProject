@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">ParkMap</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="price_label">Parking price:</string>
+    <string name="note_label">Notes:</string>
+    <string name="opening_hours_label">Opening hours:</string>
+
+    <string name="autocomplete_hint">Search</string>
+    <string name="comment_label">Comments:</string>
+    <string name="comment_not_available">There\'s no available comments.</string>
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_me">Me</string>
+
+    <string name="me_about_us">About Us</string>
+    <string name="me_feedback">Feedback</string>
+    <string name="me_color_mode">Change Theme</string>
+    <string name="me_language">Language</string>
+
+    <string name="next_icon">Next Icon</string>
+    <string name="search_hint">Search</string>
+
+    <string name="feedback_caption">Your feedback helps us improve our application and enhance your experience.</string>
+    <string name="feedback_title">Feedback Form</string>
+    <string name="email_label">Your Email:</string>
+    <string name="subject_label">Subject:</string>
+    <string name="subject_hint">optional</string>
+    <string name="feedback_label">Your feedback:</string>
+    <string name="submit_button">Submit</string>
+
+    <string name="not_available_field">This information is not available.</string>
+    <string name="feedback_name">Your name:</string>
+    <string name="feedback_name_hint">Enter your name here</string>
+    <string name="feedback_comment">Comment:</string>
+    <string name="feedback_comment_hint">Enter your comment</string>
+    <string name="feedback_hint">Your feedback here</string>
+    <string name="feedback_ask">Please add feedback so that we can improve our app performance.</string>
+    <string name="email_via">Send email via:</string>
+    <string name="no_email_clients">There are no email clients installed.</string>
+
+</resources>
