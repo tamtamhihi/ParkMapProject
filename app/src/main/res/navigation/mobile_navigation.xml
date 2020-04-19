@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/navigation_maps"
-        android:name="com.example.mapsautocomplete.ui.maps.MapsFragment"
+        android:name="com.example.parkmapproject.main_ui.maps.MapsFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.example.mapsautocomplete.ui.dashboard.DashboardFragment"
+        android:name="com.example.parkmapproject.main_ui.dashboard.DashboardFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
         android:id="@+id/navigation_me"
-        android:name="com.example.mapsautocomplete.ui.me.MeFragment"
+        android:name="com.example.parkmapproject.main_ui.me.MeFragment"
         android:label="@string/title_me"
         tools:layout="@layout/fragment_me" />
 </navigation>

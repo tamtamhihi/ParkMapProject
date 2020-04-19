@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MapsAutocomplete.iml" filepath="$PROJECT_DIR$/MapsAutocomplete.iml" group="MapsAutocomplete" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="MapsAutocomplete/app" />
+      <module fileurl="file://$PROJECT_DIR$/ParkMapProject.iml" filepath="$PROJECT_DIR$/ParkMapProject.iml" group="ParkMapProject" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="ParkMapProject/app" />
     </modules>
   </component>
 </project>

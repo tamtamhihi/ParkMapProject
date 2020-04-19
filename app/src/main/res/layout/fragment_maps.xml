@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:map="http://schemas.android.com/apk/res-auto"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:theme="@style/Theme.Design.NoActionBar"
-    tools:context=".ui.maps.MapsFragment">
+    tools:context=".main_ui.maps.MapsFragment">
 
     <fragment
         android:id="@+id/map"
@@ -14,7 +14,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center_horizontal|bottom"
-        map:uiZoomControls="true"
         android:elevation="5dp"
         map:uiZoomGestures="true"
         tools:context=".MapsActivity">
@@ -46,12 +45,19 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="16dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="75dp"
         android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
         android:elevation="10dp"
-        map:backgroundTint="@color/colorPrimary"
         android:src="@drawable/ic_gps"
-        android:tint="@color/colorAccent" />
+        android:tint="@color/whiteText"
+        app:backgroundTint="@color/colorPrimary"
+        app:layout_anchor="@+id/map"
+        app:layout_anchorGravity="top|end"
+        android:layout_gravity="top"/>
 
-</RelativeLayout>
+    <include layout="@layout/layout_suggestion_bottomsheet" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

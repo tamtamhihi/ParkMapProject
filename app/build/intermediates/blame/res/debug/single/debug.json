@@ -1,306 +1,410 @@
 [
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_parkinglot.png.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable-mdpi\\ic_parkinglot.png"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_gps.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-xxhdpi\\ic_gps.png"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_ic_parkinglot.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-anydpi\\ic_parkinglot.xml"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_add.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-xxhdpi\\ic_add.png"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button_background_selector.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable\\button_background_selector.xml"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_next.png.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable-hdpi\\ic_next.png"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\layout_parkinglot_listitem.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\layout\\parkinglot_listitem.xml"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_ic_parkinglocation.xml.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable-anydpi\\ic_parkinglocation.xml"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_solid_button_normal.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable\\solid_button_normal.xml"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable_search_bar.xml.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable\\search_bar.xml"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_parkinglot.png.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable-xhdpi\\ic_parkinglot.png"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_checked.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-mdpi\\ic_checked.png"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_ic_next.xml.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable-anydpi\\ic_next.xml"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\menu_bottom_nav_menu.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\menu\\bottom_nav_menu.xml"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_parkinglocation.png.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable-xxhdpi\\ic_parkinglocation.png"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_checked.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-hdpi\\ic_checked.png"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_ic_down.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-anydpi\\ic_down.xml"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\menu_bottom_nav_menu.xml.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\menu\\bottom_nav_menu.xml"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_no_image.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable\\no_image.png"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable_noimage.jpg.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable\\noimage.jpg"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_ic_clear.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-anydpi\\ic_clear.xml"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\font_muli_bold.ttf.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\font\\muli_bold.ttf"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_next.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-mdpi\\ic_next.png"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_out_to_right.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\anim\\slide_out_to_right.xml"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_clear.png.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable-xxhdpi\\ic_clear.png"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_parkinglot.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-hdpi\\ic_parkinglot.png"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_noimage.jpg.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable\\noimage.jpg"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_parkinglocation.png.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable-mdpi\\ic_parkinglocation.png"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_clear.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-mdpi\\ic_clear.png"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\layout_parkinglot_listitem.xml.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\layout\\parkinglot_listitem.xml"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\font_source_sans_pro.ttf.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\font\\source_sans_pro.ttf"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_clear.png.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable-mdpi\\ic_clear.png"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_add.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-hdpi\\ic_add.png"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_ic_parkinglot.xml.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable-anydpi\\ic_parkinglot.xml"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_gps.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-mdpi\\ic_gps.png"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\layout_add_comment.xml.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\layout\\add_comment.xml"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_search.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-mdpi\\ic_search.png"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable_noimg.png.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable\\noimg.png"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_ic_add.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-anydpi\\ic_add.xml"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_add.png.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable-xhdpi\\ic_add.png"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_avatar.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-mdpi\\ic_avatar.png"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_next.png.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable-xxhdpi\\ic_next.png"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_avatar.png.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable-hdpi\\ic_avatar.png"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_avatar.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-xxhdpi\\ic_avatar.png"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_notifications_black_24dp.xml.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable\\ic_notifications_black_24dp.xml"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_ic_avatar.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-anydpi\\ic_avatar.xml"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_avatar.png.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable-xxhdpi\\ic_avatar.png"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_gps.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-xhdpi\\ic_gps.png"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_maps.xml.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\layout\\fragment_maps.xml"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_parkinglocation.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-xxhdpi\\ic_parkinglocation.png"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_feedback.xml.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\layout\\activity_feedback.xml"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_search.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-xhdpi\\ic_search.png"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_ic_search.xml.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable-anydpi\\ic_search.xml"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_next.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-xhdpi\\ic_next.png"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_add.png.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable-xxhdpi\\ic_add.png"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_unnamed.jpg.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable\\unnamed.jpg"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_clear.png.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable-xhdpi\\ic_clear.png"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_dashboard.xml.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\layout\\fragment_dashboard.xml"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_gps.png.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable-xhdpi\\ic_gps.png"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_search.png.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable-mdpi\\ic_search.png"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable_default_avatar.xml.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable\\default_avatar.xml"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\layout_suggested_parkinglot.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\layout\\suggested_parkinglot.xml"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable_avatar_bg.xml.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable\\avatar_bg.xml"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_clear.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-xxhdpi\\ic_clear.png"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_dashboard_black_24dp.xml.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable\\ic_dashboard_black_24dp.xml"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_down.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-hdpi\\ic_down.png"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_add.png.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable-hdpi\\ic_add.png"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\navigation_mobile_navigation.xml.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\navigation\\mobile_navigation.xml"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_logo_nobg.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable\\logo_nobg.png"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_add.png.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable-mdpi\\ic_add.png"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_card_pressed.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable\\card_pressed.xml"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_gps.png.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable-mdpi\\ic_gps.png"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable_unnamed.jpg.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable\\unnamed.jpg"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_parkinglocation.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-mdpi\\ic_parkinglocation.png"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_avatar.png.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable-xhdpi\\ic_avatar.png"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_clear.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-hdpi\\ic_clear.png"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\layout_user_rating.xml.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\layout\\user_rating.xml"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_home_black_24dp.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable\\ic_home_black_24dp.xml"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_ic_clear.xml.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable-anydpi\\ic_clear.xml"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_dashboard.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\layout\\fragment_dashboard.xml"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_avatar.png.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable-mdpi\\ic_avatar.png"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_parkinglot.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-xhdpi\\ic_parkinglot.png"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_ic_next.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-anydpi\\ic_next.xml"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_me.xml.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\layout\\fragment_me.xml"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_out_to_left.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\anim\\slide_out_to_left.xml"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\font_source_sans_pro.ttf.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\font\\source_sans_pro.ttf"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_splash_screen.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\layout\\activity_splash_screen.xml"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_parkinglot.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-xxhdpi\\ic_parkinglot.png"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_next.png.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable-xhdpi\\ic_next.png"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_gps.png.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable-hdpi\\ic_gps.png"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_search_bar.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable\\search_bar.xml"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_checked.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-xhdpi\\ic_checked.png"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_parking_lot.xml.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\layout\\activity_parking_lot.xml"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_noimg.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable\\noimg.png"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_down.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-mdpi\\ic_down.png"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_parkinglot.png.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable-hdpi\\ic_parkinglot.png"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_next.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-xxhdpi\\ic_next.png"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_search.png.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable-hdpi\\ic_search.png"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_checked.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-xxhdpi\\ic_checked.png"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_parkinglot.png.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable-xxhdpi\\ic_parkinglot.png"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_ic_checked.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-anydpi\\ic_checked.xml"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_in_from_right.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\anim\\slide_in_from_right.xml"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_parkinglocation.png.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable-hdpi\\ic_parkinglocation.png"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_down.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-xhdpi\\ic_down.png"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_gps.png.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable-xxhdpi\\ic_gps.png"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_me.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\layout\\fragment_me.xml"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_search.png.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable-xxhdpi\\ic_search.png"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_avatar.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-hdpi\\ic_avatar.png"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_ic_gps.xml.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable-anydpi\\ic_gps.xml"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_parkinglocation.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-hdpi\\ic_parkinglocation.png"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_ic_add.xml.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable-anydpi\\ic_add.xml"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_parkinglot.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-mdpi\\ic_parkinglot.png"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_ic_avatar.xml.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable-anydpi\\ic_avatar.xml"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_card_normal.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable\\card_normal.xml"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_parkinglocation.png.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable-xhdpi\\ic_parkinglocation.png"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_home_black_24dp.xml.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable\\ic_home_black_24dp.xml"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_ic_gps.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-anydpi\\ic_gps.xml"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_search.png.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable-xhdpi\\ic_search.png"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\layout_add_comment.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\layout\\add_comment.xml"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_add.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-mdpi\\ic_add.png"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_clear.png.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable-hdpi\\ic_clear.png"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_down.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-xxhdpi\\ic_down.png"
     },
     {
-        "merged": "D:\\Android Project\\MapsAutocomplete\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_next.png.flat",
-        "source": "D:\\Android Project\\MapsAutocomplete\\app\\src\\main\\res\\drawable-mdpi\\ic_next.png"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\font_muli_bold.ttf.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\font\\muli_bold.ttf"
+    },
+    {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_default_avatar.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable\\default_avatar.xml"
+    },
+    {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_feedback.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\layout\\activity_feedback.xml"
+    },
+    {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_clear.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-xhdpi\\ic_clear.png"
+    },
+    {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_solid_button_pressed.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable\\solid_button_pressed.xml"
+    },
+    {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_dashboard_black_24dp.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable\\ic_dashboard_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_search.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-xxhdpi\\ic_search.png"
+    },
+    {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_parkinglocation.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-xhdpi\\ic_parkinglocation.png"
+    },
+    {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_gps.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-hdpi\\ic_gps.png"
+    },
+    {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_ic_parkinglocation.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-anydpi\\ic_parkinglocation.xml"
+    },
+    {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_maps.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\layout\\fragment_maps.xml"
+    },
+    {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\navigation_nav_graph.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\navigation\\nav_graph.xml"
+    },
+    {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_next.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-hdpi\\ic_next.png"
+    },
+    {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_in_from_left.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\anim\\slide_in_from_left.xml"
+    },
+    {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_search.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-hdpi\\ic_search.png"
+    },
+    {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\layout_user_rating.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\layout\\user_rating.xml"
+    },
+    {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\layout_layout_suggestion_bottomsheet.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\layout\\layout_suggestion_bottomsheet.xml"
+    },
+    {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_avatar.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-xhdpi\\ic_avatar.png"
+    },
+    {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_parking_lot.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\layout\\activity_parking_lot.xml"
+    },
+    {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\navigation_mobile_navigation.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\navigation\\mobile_navigation.xml"
+    },
+    {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_avatar_bg.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable\\avatar_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_notifications_black_24dp.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable\\ic_notifications_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_add.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-xhdpi\\ic_add.png"
+    },
+    {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_card_selector.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable\\card_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_ic_search.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-anydpi\\ic_search.xml"
     }
 ]

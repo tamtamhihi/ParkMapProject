@@ -1,2 +1,2 @@
-rootProject.name='MapsAutocomplete'
+rootProject.name='ParkMapProject'
 include ':app'

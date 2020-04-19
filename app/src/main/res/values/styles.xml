@@ -19,9 +19,11 @@
     <style name="CustomAlertDialog" parent="Theme.AppCompat.Dialog">
         <item name="android:windowBackground">@color/colorPrimary</item>
     </style>
+
     <style name="CustomCollapsedText" parent="TextAppearance.AppCompat.Medium">
         <item name="android:textColor">@color/colorAccent</item>
     </style>
+
     <style name="CustomExpandedText" parent="TextAppearance.AppCompat.Large">
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/colorAccent</item>
@@ -30,5 +32,63 @@
         <item name="collapsedTitleTextAppearance">@style/CustomCollapsedText</item>
         <item name="backgroundColor">@color/colorPrimary</item>
     </style>
+
+    <style name="layoutBackground">
+        <item name="android:background">#fcfcfc</item>
+    </style>
+
+    <style name="softBackground">
+        <item name="android:background">@color/colorAccent</item>
+    </style>
+
+    <style name="cardBackground">
+        <item name="android:background">#ffffff</item>
+        <item name="cardBackgroundColor">#ffffff</item>
+    </style>
+
+    <style name="textTitle" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="textMenu" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="textCaption" parent="TextAppearance.AppCompat.Body2">
+        <item name="android:textColor">#AAAAAA</item>
+    </style>
+
+    <style name="textExpand" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textColor">@color/whiteText</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="buttonTintColor">
+        <item name="tint">#ffffff</item>
+    </style>
+
+    <style name="fab" parent="Widget.Design.FloatingActionButton">
+        <item name="android:tint">#ffffff</item>
+    </style>
+
+    <style name="iconStyle">
+        <item name="iconTint">#ffffff</item>
+    </style>
+
+    <style name="buttonBackground">
+        <item name="background">@drawable/button_background_selector</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
 
 </resources>

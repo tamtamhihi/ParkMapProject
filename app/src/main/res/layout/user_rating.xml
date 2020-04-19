@@ -1,41 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="8dp"
-    android:layout_margin="4dp"
-    android:background="@drawable/search_bar"
     android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp">
 
-    <TextView
-        android:id="@+id/username"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/source_sans_pro"
-        android:paddingBottom="4dp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@color/quantum_black_text"
-        android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:background="@color/colorAccent"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/default_avatar" />
 
-    <RatingBar
-        android:id="@+id/rating"
-        style="@android:style/Widget.Material.Light.RatingBar.Small"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:progressTint="@color/colorPrimary"
-        android:isIndicator="true"
-        android:numStars="5"
-        android:foregroundTint="@color/colorPrimary"
-        android:paddingBottom="4dp"
-        android:stepSize="1" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@+id/avatar"
+                android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/comment"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/source_sans_pro"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textSize="14sp" />
+                <TextView
+                    android:id="@+id/username"
+                    style="@style/textMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="4dp"
+                    android:text="Tam Ngoc Bang Nguyen" />
 
+                <RatingBar
+                    android:id="@+id/rating"
+                    style="@android:style/Widget.Material.Light.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:paddingBottom="4dp"
+                    android:progressTint="@color/colorPrimary"
+                    android:stepSize="1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/timestamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/avatar"
+                android:layout_alignParentEnd="true"
+                android:text="14:40 26/03/2019" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/comment"
+            style="@style/textCaption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Bãi giữ xe chuyên nghiệp, sạch sẽ, lịch sự, tuy nhiên giá gửi xe khá cao, gửi trên 6 tiếng thu thêm tiền." />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/colorAccent" />
 </LinearLayout>
