@@ -97,7 +97,6 @@ public class DatabaseViewModel extends AndroidViewModel {
                 Places.initialize(context, apiKey);
                 client = Places.createClient(context);
                 new getPlaceId().execute();
-                // new getUserRatings().execute();
                 mParkingLotData.setValue(mParkingLot);
                 isLoading.setValue(false);
             }
@@ -131,7 +130,7 @@ public class DatabaseViewModel extends AndroidViewModel {
                 try {
                     geocodingAPI = new GeocodingAPI(parkingLot.getLatitude(), parkingLot.getLongitude(), apiKey);
                 } catch (MalformedURLException e) {
-                    Log.d("DMVM Line 128", "MalformedURLException: " + e);
+                    e.printStackTrace();
                 }
                 try {
                     ArrayList<String> placeId = geocodingAPI.getPlaceId();
@@ -139,69 +138,16 @@ public class DatabaseViewModel extends AndroidViewModel {
                         parkingLot.setPlaceId(placeId.get(0));
                     }
                 } catch (IOException | JSONException e) {
-                    Log.d("DBVM Line 108 ViewModel", "is wrong");
                     e.printStackTrace();
                 }
             }
             return null;
         }
-        /*
-        @Override
-        protected void onPostExecute(ArrayList<String> s) {
-            super.onPostExecute(s);
-            for (ParkingLot parkingLot : mParkingLot) {
-                String key = parkingLot.getKey();
-                String placeId = parkingLot.getPlaceId();
-                if (placeId == null)
-                    continue;
-                if (parkingLot.getPlacePhotos() != null && parkingLot.getPlacePhotos().size() > 0)
-                    continue;
-                List<Place.Field> fields = Arrays.asList(Place.Field.PHOTO_METADATAS);
-                FetchPlaceRequest request = FetchPlaceRequest.builder(placeId, fields).build();
-                client.fetchPlace(request).addOnSuccessListener((response) -> {
-                    Place place = response.getPlace();
-                    List<PhotoMetadata> photoMetadatas = place.getPhotoMetadatas();
-                    if (photoMetadatas != null) {
-                        for (PhotoMetadata photo : photoMetadatas) {
-                            String attributions = photo.getAttributions();
-                            FetchPhotoRequest photoRequest = FetchPhotoRequest.builder(photo).build();
-                            client.fetchPhoto(photoRequest).addOnSuccessListener((photoResponse) -> {
-                                Bitmap bitmap = photoResponse.getBitmap();
-                                parkingLot.addPlacePhoto(bitmap);
-                                databaseHelper.updateBitmap(bitmap, key);
-                                Log.d("DBVM Line 161", "Save places photo done for PL " + key);
-                                /*
-                                try {
-                                    savePhoto(bitmap, parkingLot.getKey());
-                                } catch (IOException e) {
-                                    e.printStackTrace();
-                                    Log.d("DBVM Line 154", "Save places photo not ok for PL " + parkingLot.getKey());
-                                }
-
-                            }).addOnFailureListener((e) -> {
-                                if (e instanceof ApiException) {
-                                    ApiException exception = (ApiException) e;
-                                    Log.e("DBVM Line 177", "Api exception: " + e);
-                                }
-                            });
-                        }
-                    }
-                }).addOnFailureListener((e) -> {
-                    Log.d("BDVM Line 140 ViewModel", "Hu rui :((" + e.getMessage());
-                });
-                /*
-                try {
-                    savePlacesPhoto(parkingLot);
-                } catch (IOException e) {
-                    Log.d("DBVM Line 157", "Save places photo not ok for PL " + parkingLot.getKey());
-                    e.printStackTrace();
-                }
-
-            }
-        }
-        */
     }
 
+    /*
+    This AsyncTask is used to retrieve reviews for the parking lot if available from Places API.
+     */
     private class getUserRatings extends AsyncTask<Void, PlacesAPI, Void> {
         @Override
         protected Void doInBackground(Void... voids) {
@@ -214,7 +160,6 @@ public class DatabaseViewModel extends AndroidViewModel {
                 try {
                     placesAPI = new PlacesAPI(parkingLot.getPlaceId(), apiKey);
                 } catch (JSONException | IOException e) {
-                    Log.d("DBVM Line165VM", "JSONException | IOException: ");
                     e.printStackTrace();
                 }
                 try {
@@ -224,7 +169,6 @@ public class DatabaseViewModel extends AndroidViewModel {
                             databaseHelper.updateUserRating(userRating, key);
                     }
                 } catch (JSONException | IOException e) {
-                    Log.d("DBVM Line171VM", "JSONException | IOException");
                     e.printStackTrace();
                 }
             }
@@ -248,7 +192,6 @@ public class DatabaseViewModel extends AndroidViewModel {
                 fos.close();
             }
         }
-        Log.d("DBVM Line 199", "Finished saving for PL " + parkingLot.getKey());
     }
     private void savePhoto(Bitmap bitmap, String key) throws IOException {
         ContextWrapper wrapper = new ContextWrapper(context);
@@ -259,7 +202,6 @@ public class DatabaseViewModel extends AndroidViewModel {
         FileOutputStream fos = new FileOutputStream(newFile);
         bitmap.compress(Bitmap.CompressFormat.PNG, 90, fos);
         fos.close();
-        Log.d("DBVM Line 199", "Finished saving 1 bitmap for PL " + key);
     }
     private void readPlacesPhoto(ParkingLot parkingLot) throws FileNotFoundException {
         File directory = new File(parkingLot.getKey());

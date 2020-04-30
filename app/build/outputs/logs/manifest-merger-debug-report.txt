@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:2:1-48:12
-INJECTED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:2:1-48:12
-INJECTED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:2:1-48:12
-INJECTED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:2:1-48:12
+ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:2:1-52:12
 MERGED from [androidx.navigation:navigation-ui:2.2.1] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\80a052e9e4e969b6c604905e5ce28d1d\navigation-ui-2.2.1\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\299b341910a01778c1031d8bc586e870\material-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.libraries.places:places:2.2.0] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\5f45b4887b224dfd29f1ce619773e965\jetified-places-2.2.0\AndroidManifest.xml:2:1-23:12
@@ -12,6 +12,7 @@ MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\tamng\.g
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\3fbc1fd346f80d1ea6db5e99ab41d4e4\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.navigation:navigation-fragment:2.2.1] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\e24f35265cf2e744560feb3de4533253\navigation-fragment-2.2.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\65a7b18fc7f3332e3380985cc3790f5c\lifecycle-extensions-2.2.0\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\a4f6df70d59f282df2678e78fe44b186\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.bumptech.glide:glide:4.10.0] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\47c3418d3a891e0cdbec1d11ae0aa7ec\jetified-glide-4.10.0\AndroidManifest.xml:2:1-12:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\a4212b4de23e474bf4daad6e4951aaee\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\14c9a7f7e0895a28c40b2aeb1236e906\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
@@ -65,32 +66,32 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\tamng\.g
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\0e812859d2f6feda23da133198c33ba2\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\5e17b2c11736659b6b2e8c71ecf06d4b\jetified-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\0f19086b5fdc96cfb7fd04393221a6b5\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\d1e480b7a3e38bc5bb2c563b2e91c373\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.bumptech.glide:gifdecoder:4.10.0] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\d6b398578fb6a91ae4dbe521358602cb\jetified-gifdecoder-4.10.0\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:firebase-components:16.0.0] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\79ec9f0fb008e367a10ee5adcc081489\jetified-firebase-components-16.0.0\AndroidManifest.xml:15:1-23:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\cdb774487ecaaaf9278822196b847146\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.1.0] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\dd17e300b7dc8363a20ced8f6bc8903e\jetified-transport-backend-cct-2.1.0\AndroidManifest.xml:15:1-38:12
 MERGED from [com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\d13cc15c6b4e016d9eca9ccdc0502471\jetified-transport-runtime-2.1.0\AndroidManifest.xml:15:1-41:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\07660ca846398cb3c0ec9a442510d6ee\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\d1e480b7a3e38bc5bb2c563b2e91c373\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\812334fc979131257e9cd9e9abfdbe50\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\7198d9a0add136c8c7f5999756bca948\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-database-collection:17.0.0] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\58f236cbc26449ac082fe05f157232b7\jetified-firebase-database-collection-17.0.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.android.volley:volley:1.1.1] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\8559332c121648b92ac2c8c9b758c425\jetified-volley-1.1.1\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.datatransport:transport-api:2.1.0] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\0ab05460dd56f8028b954f97a9664508\jetified-transport-api-2.1.0\AndroidManifest.xml:15:1-22:12
-INJECTED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:2:1-48:12
-INJECTED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:2:1-48:12
-INJECTED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:2:1-52:12
 	package
 		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:3:5-41
 		INJECTED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:2:1-48:12
+		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:2:1-52:12
 		INJECTED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:2:1-48:12
+		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:2:1-52:12
 		INJECTED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:2:11-69
@@ -109,7 +110,7 @@ ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:7:5-80
 	android:name
 		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:7:22-77
 application
-ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:9:5-47:19
+ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:9:5-50:19
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\299b341910a01778c1031d8bc586e870\material-1.1.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\299b341910a01778c1031d8bc586e870\material-1.1.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.libraries.places:places:2.2.0] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\5f45b4887b224dfd29f1ce619773e965\jetified-places-2.2.0\AndroidManifest.xml:13:5-21:19
@@ -183,75 +184,85 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\ta
 MERGED from [com.android.volley:volley:1.1.1] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\8559332c121648b92ac2c8c9b758c425\jetified-volley-1.1.1\AndroidManifest.xml:9:5-20
 MERGED from [com.android.volley:volley:1.1.1] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\8559332c121648b92ac2c8c9b758c425\jetified-volley-1.1.1\AndroidManifest.xml:9:5-20
 	android:screenOrientation
-		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:16:9-45
+		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:14:9-45
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\64cddd45e89bc3894cf7e46e3178d8e4\core-1.1.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:14:9-35
+		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:15:9-35
 	android:label
 		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:12:9-41
 	android:roundIcon
-		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:13:9-54
+		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:13:9-43
 	android:icon
-		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:11:9-43
+		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:11:9-38
 	android:allowBackup
 		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:10:9-35
 	android:theme
-		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:15:9-40
+		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:16:9-40
+activity#com.example.parkmapproject.main_ui.me.HowToActivity
+ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:17:9-71
+	android:name
+		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:17:19-59
+activity#com.example.parkmapproject.main_ui.me.AboutActivity
+ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:18:9-62
+	android:name
+		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:18:19-59
 activity#com.example.parkmapproject.SplashScreen
-ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:18:9-23:20
+ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:19:9-25:20
 	android:name
-		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:18:19-47
+		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:19:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:19:13-22:29
+ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:20:13-24:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:20:17-69
+ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:21:17-69
 	android:name
-		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:20:25-66
+		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:21:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:21:17-77
+ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:23:17-77
 	android:name
-		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:21:27-74
-activity#com.example.parkmapproject.me_ui.FeedbackActivity
-ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:25:9-60
+		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:23:27-74
+activity#com.example.parkmapproject.main_ui.me.FeedbackActivity
+ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:26:9-28:47
+	android:launchMode
+		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:28:13-44
 	android:name
-		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:25:19-57
+		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:27:13-56
 activity#com.example.parkmapproject.parkinglot.ParkingLotActivity
-ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:27:9-34:20
+ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:29:9-37:20
 	android:launchMode
-		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:29:13-44
+		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:31:13-44
 	android:name
-		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:28:13-58
+		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:30:13-58
 intent-filter#action:name:android.intent.action.GET_CONTENT+category:name:android.intent.category.DEFAULT
-ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:30:13-33:29
+ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:32:13-36:29
 action#android.intent.action.GET_CONTENT
-ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:31:17-76
+ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:33:17-76
 	android:name
-		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:31:25-73
+		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:33:25-73
 category#android.intent.category.DEFAULT
-ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:32:17-76
+ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:35:17-76
 	android:name
-		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:32:27-73
+		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:35:27-73
 meta-data#com.google.android.geo.API_KEY
-ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:36:9-38:55
+ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:39:9-41:55
 	android:value
-		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:38:13-52
+		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:41:13-52
 	android:name
-		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:37:13-58
+		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:40:13-58
 meta-data#preloaded_fonts
-ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:39:9-41:57
+ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:42:9-44:57
 	android:resource
-		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:41:13-54
+		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:44:13-54
 	android:name
-		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:40:13-43
+		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:43:13-43
 activity#com.example.parkmapproject.MainActivity
-ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:43:9-46:45
+ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:46:9-49:46
 	android:label
-		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:45:13-56
+		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:48:13-56
 	android:launchMode
-		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:46:13-43
+		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:49:13-43
 	android:name
-		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:44:13-41
+		ADDED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml:47:13-41
 uses-sdk
 INJECTED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\tamng\ParkMapProject\app\src\main\AndroidManifest.xml
@@ -272,6 +283,8 @@ MERGED from [androidx.navigation:navigation-fragment:2.2.1] C:\Users\tamng\.grad
 MERGED from [androidx.navigation:navigation-fragment:2.2.1] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\e24f35265cf2e744560feb3de4533253\navigation-fragment-2.2.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\65a7b18fc7f3332e3380985cc3790f5c\lifecycle-extensions-2.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\65a7b18fc7f3332e3380985cc3790f5c\lifecycle-extensions-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\a4f6df70d59f282df2678e78fe44b186\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\a4f6df70d59f282df2678e78fe44b186\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.github.bumptech.glide:glide:4.10.0] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\47c3418d3a891e0cdbec1d11ae0aa7ec\jetified-glide-4.10.0\AndroidManifest.xml:6:5-8:41
 MERGED from [com.github.bumptech.glide:glide:4.10.0] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\47c3418d3a891e0cdbec1d11ae0aa7ec\jetified-glide-4.10.0\AndroidManifest.xml:6:5-8:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\a4212b4de23e474bf4daad6e4951aaee\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
@@ -378,6 +391,8 @@ MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\tamng\.gradle\caches
 MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\5e17b2c11736659b6b2e8c71ecf06d4b\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\0f19086b5fdc96cfb7fd04393221a6b5\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\0f19086b5fdc96cfb7fd04393221a6b5\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\d1e480b7a3e38bc5bb2c563b2e91c373\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\d1e480b7a3e38bc5bb2c563b2e91c373\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.github.bumptech.glide:gifdecoder:4.10.0] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\d6b398578fb6a91ae4dbe521358602cb\jetified-gifdecoder-4.10.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.github.bumptech.glide:gifdecoder:4.10.0] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\d6b398578fb6a91ae4dbe521358602cb\jetified-gifdecoder-4.10.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-components:16.0.0] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\79ec9f0fb008e367a10ee5adcc081489\jetified-firebase-components-16.0.0\AndroidManifest.xml:19:5-21:41
@@ -390,8 +405,6 @@ MERGED from [com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\
 MERGED from [com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\d13cc15c6b4e016d9eca9ccdc0502471\jetified-transport-runtime-2.1.0\AndroidManifest.xml:18:5-20:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\07660ca846398cb3c0ec9a442510d6ee\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\07660ca846398cb3c0ec9a442510d6ee\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\d1e480b7a3e38bc5bb2c563b2e91c373\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\d1e480b7a3e38bc5bb2c563b2e91c373\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\812334fc979131257e9cd9e9abfdbe50\documentfile-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\812334fc979131257e9cd9e9abfdbe50\documentfile-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] C:\Users\tamng\.gradle\caches\transforms-2\files-2.1\7198d9a0add136c8c7f5999756bca948\print-1.0.0\AndroidManifest.xml:20:5-44

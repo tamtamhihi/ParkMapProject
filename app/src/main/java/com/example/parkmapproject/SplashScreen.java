@@ -1,20 +1,18 @@
 package com.example.parkmapproject;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProvider;
-
 import android.Manifest;
-import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.ProgressBar;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+import androidx.lifecycle.ViewModelProvider;
 
 import com.example.parkmapproject.database.DatabaseViewModel;
 
@@ -80,13 +78,10 @@ public class SplashScreen extends AppCompatActivity implements ActivityCompat.On
         loadingBar.setVisibility(View.VISIBLE);
         parkingLotDatabase = new ViewModelProvider(this).get(DatabaseViewModel.class);
         parkingLotDatabase.getDatabase();
-        parkingLotDatabase.isLoading().observe(this, new Observer<Boolean>() {
-            @Override
-            public void onChanged(Boolean isLoading) {
-                if (isLoading != null && !isLoading) {
-                    loadingBar.setVisibility(View.GONE);
-                    startApplication();
-                }
+        parkingLotDatabase.isLoading().observe(this, isLoading -> {
+            if (isLoading != null && !isLoading) {
+                loadingBar.setVisibility(View.GONE);
+                startApplication();
             }
         });
     }

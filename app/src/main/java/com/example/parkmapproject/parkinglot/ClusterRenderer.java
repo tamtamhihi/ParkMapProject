@@ -38,8 +38,6 @@ public class ClusterRenderer extends DefaultClusterRenderer<ParkingLot> {
     @Override
     protected void onBeforeClusterItemRendered(ParkingLot item, MarkerOptions markerOptions) {
         parkingIcon.setImageResource(R.drawable.ic_parkinglocation);
-        //parkingIcon.setBackgroundColor(Integer.parseInt("#00ff0000"));
-
         Bitmap icon = iconGenerator.makeIcon();
         markerOptions.icon(BitmapDescriptorFactory.fromBitmap(icon))
                 .title(item.getTitle())

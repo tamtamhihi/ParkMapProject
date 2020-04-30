@@ -1,18 +1,16 @@
 package com.example.parkmapproject;
 
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.view.Window;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 import com.example.parkmapproject.main_ui.dashboard.DashboardFragment;
 import com.example.parkmapproject.main_ui.maps.MapsFragment;
 import com.example.parkmapproject.main_ui.me.MeFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
 
 public class MainActivity extends AppCompatActivity {
     final Fragment mapsFragment = new MapsFragment();
@@ -30,25 +28,22 @@ public class MainActivity extends AppCompatActivity {
 
         // Set listener for navigation items
         BottomNavigationView navView = findViewById(R.id.nav_view);
-        navView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.navigation_maps:
-                        fm.beginTransaction().hide(activeFragment).show(mapsFragment).commit();
-                        activeFragment = mapsFragment;
-                        return true;
-                    case R.id.navigation_dashboard:
-                        fm.beginTransaction().hide(activeFragment).show(dashboardFragment).commit();
-                        activeFragment = dashboardFragment;
-                        return true;
-                    case R.id.navigation_me:
-                        fm.beginTransaction().hide(activeFragment).show(meFragment).commit();
-                        activeFragment = meFragment;
-                        return true;
-                }
-                return false;
+        navView.setOnNavigationItemSelectedListener(item -> {
+            switch (item.getItemId()) {
+                case R.id.navigation_maps:
+                    fm.beginTransaction().hide(activeFragment).show(mapsFragment).commit();
+                    activeFragment = mapsFragment;
+                    return true;
+                case R.id.navigation_dashboard:
+                    fm.beginTransaction().hide(activeFragment).show(dashboardFragment).commit();
+                    activeFragment = dashboardFragment;
+                    return true;
+                case R.id.navigation_me:
+                    fm.beginTransaction().hide(activeFragment).show(meFragment).commit();
+                    activeFragment = meFragment;
+                    return true;
             }
+            return false;
         });
 
         // Add all fragments but show only maps fragment

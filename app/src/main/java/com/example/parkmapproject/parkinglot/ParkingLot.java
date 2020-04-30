@@ -218,9 +218,7 @@ public class ParkingLot implements ClusterItem, Serializable, Comparable {
     @Exclude
     public Map<String, Object> toMap() {
         HashMap<String, Object> result = new HashMap<>();
-        //result.put("userRatings", userRatings);
         result.put("placeId", placeId);
-        //result.put("placePhotos", placePhotos);
         return result;
     }
 }

@@ -1,178 +1,158 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".main_ui.me.MeFragment">
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/user_avatar"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_above="@+id/user_name"
-        android:layout_centerHorizontal="true"
-        android:outlineAmbientShadowColor="@color/colorPrimary"
-        android:paddingBottom="8dp"
-        android:src="@drawable/default_avatar"
-        app:civ_border_color="@color/quantum_grey"
-        app:civ_border_overlay="true"
-        app:civ_border_width="2dp" />
-
-    <TextView
-        android:id="@+id/user_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/me_menu"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="16dp"
-        android:fontFamily="@font/source_sans_pro"
-        android:text="Tam Ngoc Bang Nguyen"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-        android:textStyle="bold" />
-
     <LinearLayout
-        android:id="@+id/me_menu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_margin="8dp"
-        android:background="@color/colorPrimary"
-        android:backgroundTint="@color/quantum_grey"
-        android:dividerPadding="2dp"
-        android:layoutMode="clipBounds"
+        android:layout_gravity="top"
         android:orientation="vertical"
-        android:outlineProvider="bounds"
-        android:showDividers="middle">
+        app:layout_anchor="@id/settings"
+        app:layout_anchorGravity="top">
 
-        <RelativeLayout
-            android:id="@+id/language"
+        <ImageView
+            android:id="@+id/logo"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="1dp"
-            android:background="@android:color/white">
+            android:layout_height="100dp"
+            android:contentDescription="@string/logo"
+            android:src="@drawable/logo"
+            android:tint="@color/colorPrimary" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_centerVertical="true"
-                android:fontFamily="@font/source_sans_pro"
-                android:padding="8dp"
-                android:paddingRight="8dp"
-                android:text="@string/me_language"
-                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:contentDescription="@string/next_icon"
-                android:elevation="10dp"
-                android:padding="8dp"
-                android:src="@drawable/ic_next"
-                android:tint="@color/colorPrimary" />
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/theme"
+        <TextView
+            style="@style/textTitle"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="1dp"
-            android:background="@android:color/white">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_centerVertical="true"
-                android:fontFamily="@font/source_sans_pro"
-                android:gravity="center_vertical"
-                android:padding="8dp"
-                android:paddingRight="8dp"
-                android:text="@string/me_color_mode"
-                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:contentDescription="@string/next_icon"
-                android:elevation="10dp"
-                android:padding="8dp"
-                android:src="@drawable/ic_next"
-                android:tint="@color/colorPrimary" />
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/feedback_option"
-            android:layout_width="match_parent"
-            android:clickable="true"
-            android:focusable="true"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="1dp"
-            android:background="@android:color/white">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_centerVertical="true"
-                android:fontFamily="@font/source_sans_pro"
-                android:gravity="center_vertical"
-                android:padding="8dp"
-                android:paddingRight="8dp"
-                android:text="@string/me_feedback"
-                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:contentDescription="@string/next_icon"
-                android:elevation="10dp"
-                android:padding="8dp"
-                android:src="@drawable/ic_next"
-                android:tint="@color/colorPrimary" />
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/about_us"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/white">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_centerVertical="true"
-                android:fontFamily="@font/source_sans_pro"
-                android:gravity="center_vertical"
-                android:padding="8dp"
-                android:paddingEnd="8dp"
-                android:text="@string/me_about_us"
-                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:contentDescription="@string/next_icon"
-                android:elevation="10dp"
-                android:padding="8dp"
-                android:src="@drawable/ic_next"
-                android:tint="@color/colorPrimary" />
-
-        </RelativeLayout>
+            android:layout_height="match_parent"
+            android:paddingBottom="8dp"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="28sp" />
     </LinearLayout>
 
-</RelativeLayout>
+    <LinearLayout
+        android:id="@+id/settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:orientation="vertical">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/how_to_option"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/card_selector"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/ic_how_to" />
+
+                <TextView
+                    style="@style/textMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/me_how_to"
+                    android:textStyle="normal" />
+            </LinearLayout>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="14dp"
+            android:background="@color/colorAccent" />
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/feedback_option"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/card_selector"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/feedback_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/ic_feedback" />
+
+                <TextView
+                    style="@style/textMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/me_feedback"
+                    android:textStyle="normal" />
+            </LinearLayout>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="14dp"
+            android:background="@color/colorAccent" />
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/about_us_option"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/card_selector"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/about_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/ic_info" />
+
+                <TextView
+                    style="@style/textMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/me_about_us"
+                    android:textStyle="normal" />
+            </LinearLayout>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -40,6 +40,10 @@
         "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_info.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-hdpi\\ic_info.png"
+    },
+    {
         "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_checked.png.flat",
         "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-hdpi\\ic_checked.png"
     },
@@ -56,12 +60,24 @@
         "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-anydpi\\ic_clear.xml"
     },
     {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_how_to.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-hdpi\\ic_how_to.png"
+    },
+    {
         "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_next.png.flat",
         "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-mdpi\\ic_next.png"
     },
     {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_how_to.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\layout\\activity_how_to.xml"
+    },
+    {
         "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_out_to_right.xml.flat",
         "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\anim\\slide_out_to_right.xml"
+    },
+    {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_info.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-xhdpi\\ic_info.png"
     },
     {
         "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_parkinglot.png.flat",
@@ -88,6 +104,10 @@
         "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-mdpi\\ic_gps.png"
     },
     {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_feedback.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-hdpi\\ic_feedback.png"
+    },
+    {
         "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_search.png.flat",
         "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-mdpi\\ic_search.png"
     },
@@ -100,12 +120,16 @@
         "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-mdpi\\ic_avatar.png"
     },
     {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_avatar.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-xxhdpi\\ic_avatar.png"
+    },
+    {
         "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_avatar.png.flat",
-        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-xxhdpi\\ic_avatar.png"
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_about.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\layout\\activity_about.xml"
     },
     {
         "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_ic_avatar.xml.flat",
@@ -116,8 +140,20 @@
         "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-xhdpi\\ic_gps.png"
     },
     {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_search.jpg.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable\\search.jpg"
+    },
+    {
         "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_parkinglocation.png.flat",
         "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-xxhdpi\\ic_parkinglocation.png"
+    },
+    {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\layout_upload_progress_dialog.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\layout\\upload_progress_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_how_to.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-mdpi\\ic_how_to.png"
     },
     {
         "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_search.png.flat",
@@ -160,6 +196,10 @@
         "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-xxhdpi\\ic_clear.png"
     },
     {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_logo_nobg.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable\\logo_nobg.png"
+    },
+    {
         "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_down.png.flat",
         "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-hdpi\\ic_down.png"
     },
@@ -168,16 +208,16 @@
         "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_logo_nobg.png.flat",
-        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable\\logo_nobg.png"
-    },
-    {
         "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_card_pressed.xml.flat",
         "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable\\card_pressed.xml"
     },
     {
         "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_how_to.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-xxhdpi\\ic_how_to.png"
     },
     {
         "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_parkinglocation.png.flat",
@@ -192,6 +232,10 @@
         "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable\\ic_home_black_24dp.xml"
     },
     {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_logo.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable\\logo.xml"
+    },
+    {
         "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_dashboard.xml.flat",
         "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\layout\\fragment_dashboard.xml"
     },
@@ -204,6 +248,10 @@
         "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-anydpi\\ic_next.xml"
     },
     {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_info.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-mdpi\\ic_info.png"
+    },
+    {
         "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_out_to_left.xml.flat",
         "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\anim\\slide_out_to_left.xml"
     },
@@ -212,12 +260,20 @@
         "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\layout\\activity_splash_screen.xml"
     },
     {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_feedback.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-xxhdpi\\ic_feedback.png"
+    },
+    {
         "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_parkinglot.png.flat",
         "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-xxhdpi\\ic_parkinglot.png"
     },
     {
         "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
         "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_feedback.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-xhdpi\\ic_feedback.png"
     },
     {
         "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_search_bar.xml.flat",
@@ -248,6 +304,14 @@
         "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-anydpi\\ic_checked.xml"
     },
     {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_feedback.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-mdpi\\ic_feedback.png"
+    },
+    {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_ic_how_to.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-anydpi\\ic_how_to.xml"
+    },
+    {
         "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_in_from_right.xml.flat",
         "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\anim\\slide_in_from_right.xml"
     },
@@ -256,8 +320,16 @@
         "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-xhdpi\\ic_down.png"
     },
     {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_ic_feedback.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-anydpi\\ic_feedback.xml"
+    },
+    {
         "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_me.xml.flat",
         "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\layout\\fragment_me.xml"
+    },
+    {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_choose_place.jpg.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable\\choose_place.jpg"
     },
     {
         "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
@@ -280,8 +352,16 @@
         "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable\\card_normal.xml"
     },
     {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_motorbikes.jpg.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable\\motorbikes.jpg"
+    },
+    {
         "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
         "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_how_to.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-xhdpi\\ic_how_to.png"
     },
     {
         "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_ic_gps.xml.flat",
@@ -296,12 +376,20 @@
         "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-mdpi\\ic_add.png"
     },
     {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_info.png.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-xxhdpi\\ic_info.png"
+    },
+    {
         "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_down.png.flat",
         "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-xxhdpi\\ic_down.png"
     },
     {
         "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\font_muli_bold.ttf.flat",
         "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\font\\muli_bold.ttf"
+    },
+    {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gps.jpg.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable\\gps.jpg"
     },
     {
         "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_default_avatar.xml.flat",
@@ -360,6 +448,10 @@
         "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\anim\\slide_in_from_left.xml"
     },
     {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_solution_challenge.jpg.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable\\solution_challenge.jpg"
+    },
+    {
         "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_search.png.flat",
         "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-hdpi\\ic_search.png"
     },
@@ -370,6 +462,10 @@
     {
         "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\layout_user_rating.xml.flat",
         "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\layout\\user_rating.xml"
+    },
+    {
+        "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_ic_info.xml.flat",
+        "source": "C:\\Users\\tamng\\ParkMapProject\\app\\src\\main\\res\\drawable-anydpi\\ic_info.xml"
     },
     {
         "merged": "C:\\Users\\tamng\\ParkMapProject\\app\\build\\intermediates\\res\\merged\\debug\\layout_layout_suggestion_bottomsheet.xml.flat",

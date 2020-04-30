@@ -21,7 +21,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/cardview"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="56dp"
             android:layout_gravity="top"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
@@ -35,7 +35,7 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center_vertical"
                 android:textColor="@color/quantum_black_text"
-                android:textSize="15sp" />
+                android:textSize="16sp" />
         </androidx.cardview.widget.CardView>
     </fragment>
 

@@ -16,7 +16,6 @@ import java.util.ArrayList;
 public class ViewPagerAdapter extends PagerAdapter {
     private Context context;
     private ArrayList<Bitmap> imgBitmaps;
-    private String[] imgUrl;
 
     public ViewPagerAdapter(Context context, ArrayList<Bitmap> imgBitmaps) {
         this.context = context;
@@ -45,5 +44,10 @@ public class ViewPagerAdapter extends PagerAdapter {
     @Override
     public void destroyItem(@NonNull ViewGroup container, int position, @NonNull Object object) {
         container.removeView((View)object);
+    }
+
+    @Override
+    public int getItemPosition(@NonNull Object object) {
+        return super.getItemPosition(object);
     }
 }

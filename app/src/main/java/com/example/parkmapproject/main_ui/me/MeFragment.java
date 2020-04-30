@@ -6,32 +6,37 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 
 import androidx.annotation.NonNull;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.fragment.app.Fragment;
 
-import com.example.parkmapproject.me_ui.FeedbackActivity;
 import com.example.parkmapproject.R;
 
 public class MeFragment extends Fragment {
 
     private ImageView avatar;
-    private RelativeLayout feedback;
+    private CoordinatorLayout howTo, feedback, aboutUs;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
-            ViewGroup container, Bundle savedInstanceState) {
+                             ViewGroup container, Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_me, container, false);
 
-        avatar = root.findViewById(R.id.user_avatar);
+        howTo = root.findViewById(R.id.how_to_option);
         feedback = root.findViewById(R.id.feedback_option);
+        aboutUs = root.findViewById(R.id.about_us_option);
 
-        feedback.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getContext(), FeedbackActivity.class);
-                startActivity(intent);
-            }
+        howTo.setOnClickListener(v -> {
+            Intent intent = new Intent(getContext(), HowToActivity.class);
+            startActivity(intent);
+        });
+        feedback.setOnClickListener(v -> {
+            Intent intent = new Intent(getContext(), FeedbackActivity.class);
+            startActivity(intent);
+        });
+        aboutUs.setOnClickListener(v -> {
+            Intent intent = new Intent(getContext(), AboutActivity.class);
+            startActivity(intent);
         });
 
         return root;

@@ -207,9 +207,11 @@ public class MapsFragment extends Fragment implements OnMapReadyCallback,
                     autocompleteEdit.setText("");
                     view.setVisibility(View.GONE);
                     mClusterManager.clearItems();
+                    removeOldMarker();
                     suggestionAdapter.removeCurrentPath();
                     closeSuggestion();
-                    getDeviceLocation();
+                    if (myLocation != null)
+                        moveCamera(myLocation, DEFAULT_ZOOM);
                 });
     }
 
@@ -221,12 +223,22 @@ public class MapsFragment extends Fragment implements OnMapReadyCallback,
         // Add listener for gps icon
         gpsIcon = root.findViewById(R.id.gps);
         gpsIcon.setOnClickListener(v -> {
+            if (myLocation == null) {
+                AlertDialog noLocation = new AlertDialog.Builder(getContext()).create();
+                noLocation.setTitle(getString(R.string.no_location_title));
+                noLocation.setMessage(getString(R.string.no_location_message));
+                noLocation.setButton(AlertDialog.BUTTON_POSITIVE, getString(R.string.no_location_button),
+                        (dialog, which) -> noLocation.dismiss());
+                noLocation.show();
+                return;
+            }
             clearSearchInput();
             startLocation = myLocation;
             if (suggestionAdapter != null)
                 suggestionAdapter.removeCurrentPath();
             removeOldMarker();
             mClusterManager.clearItems();
+            mClusterManager.cluster();
             closestParkingLots(myLocation, DEFAULT_BOUNDARY);
         });
     }
@@ -242,21 +254,6 @@ public class MapsFragment extends Fragment implements OnMapReadyCallback,
         mMap = googleMap;
         mMap.getUiSettings().setMyLocationButtonEnabled(false);
         mMap.setIndoorEnabled(false);
-        /*
-        // ADDITIONAL MAP STYLING
-        mMap.setTrafficEnabled(true);
-        mMap.setIndoorEnabled(false);
-        try {
-            boolean getMapStyle = mMap.setMapStyle(MapStyleOptions.loadRawResourceStyle(
-                            Objects.requireNonNull(getContext()), R.raw.style_json));
-            if (!getMapStyle) {
-                Log.e(ERROR_TAG, "Style parsing failed");
-            }
-        }
-        catch (Resources.NotFoundException e) {
-            Log.e(ERROR_TAG, "Can't find style. Error: ", e);
-        }
-         */
         setUpClusterManager();
         getLocationPermission();
         updateLocationUI();
@@ -284,17 +281,7 @@ public class MapsFragment extends Fragment implements OnMapReadyCallback,
         });
         mClusterManager.setOnClusterItemInfoWindowClickListener(parkingLot -> {
             Intent intent = new Intent(getContext(), ParkingLotActivity.class);
-            Bundle bundle = new Bundle();
-            bundle.putSerializable("selectedLot", parkingLot);
-            ArrayList<Bitmap> placePhotos = parkingLot.getPlacePhotos();
-            if (placePhotos != null && placePhotos.size() > 0) {
-                ArrayList<String> encodedStrings = new ArrayList<>();
-                for (Bitmap bitmap : placePhotos) {
-                    encodedStrings.add(encodeBitmap(bitmap));
-                }
-                bundle.putStringArrayList("placePhotos", encodedStrings);
-            }
-            intent.putExtras(bundle);
+            intent.putExtra("key", parkingLot.getKey());
             startActivity(intent);
             Objects.requireNonNull(getActivity()).overridePendingTransition(R.anim.fragment_open_enter, R.anim.fragment_close_exit);
         });
@@ -359,7 +346,7 @@ public class MapsFragment extends Fragment implements OnMapReadyCallback,
                 getLocationPermission();
             }
         } catch (SecurityException e) {
-            Log.e("Exception: ", Objects.requireNonNull(e.getLocalizedMessage()));
+            e.printStackTrace();
         }
     }
 
@@ -386,7 +373,7 @@ public class MapsFragment extends Fragment implements OnMapReadyCallback,
                 });
             }
         } catch (SecurityException e) {
-            Log.e("Exception: %s", Objects.requireNonNull(e.getLocalizedMessage()));
+            e.printStackTrace();
         }
     }
 
@@ -422,8 +409,10 @@ public class MapsFragment extends Fragment implements OnMapReadyCallback,
     Remove the current active marker.
      */
     private void removeOldMarker() {
-        if (currentMarker != null)
+        if (currentMarker != null) {
             currentMarker.remove();
+            currentMarker = null;
+        }
     }
 
     /*
@@ -444,7 +433,6 @@ public class MapsFragment extends Fragment implements OnMapReadyCallback,
      */
     private void closestParkingLots(LatLng yourLocation, int boundary) {
         closeSuggestion();
-        addNewMarker(yourLocation);
         for (ParkingLot parkingLot : sortingParkingLot) {
             parkingLot.setDistanceFromSelected(yourLocation);
         }
@@ -465,6 +453,8 @@ public class MapsFragment extends Fragment implements OnMapReadyCallback,
             noSuggestion.setButton(AlertDialog.BUTTON_POSITIVE, getString(R.string.no_suggestion_button),
                     (dialog, which) -> noSuggestion.dismiss());
             noSuggestion.show();
+            if (myLocation != null)
+                moveCamera(myLocation, DEFAULT_ZOOM);
             return;
         }
         mClusterManager.cluster();
@@ -477,18 +467,19 @@ public class MapsFragment extends Fragment implements OnMapReadyCallback,
                 suggestionBottomSheet, getString(R.string.google_maps_key), mClusterManager);
         suggestionRecyclerView.setAdapter(suggestionAdapter);
         suggestionRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-
         layoutBottomSheet.setVisibility(View.VISIBLE);
         suggestionBottomSheet.setState(BottomSheetBehavior.STATE_COLLAPSED);
         dismissButton.setOnClickListener(v -> {
             mClusterManager.clearItems();
+            removeOldMarker();
             if (showPath != null)
                 showPath.remove();
             if (suggestionAdapter != null)
                 suggestionAdapter.removeCurrentPath();
             closeSuggestion();
             clearSearchInput();
-            moveCamera(myLocation, DEFAULT_ZOOM);
+            if (myLocation != null)
+                moveCamera(myLocation, DEFAULT_ZOOM);
         });
         header.setOnClickListener(v -> {
             if (suggestionBottomSheet.getState() == BottomSheetBehavior.STATE_COLLAPSED)

@@ -27,7 +27,6 @@
     <style name="CustomExpandedText" parent="TextAppearance.AppCompat.Large">
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/colorAccent</item>
-        <item name="fontFamily">@font/source_sans_pro</item>
         <item name="background">@color/colorPrimary</item>
         <item name="collapsedTitleTextAppearance">@style/CustomCollapsedText</item>
         <item name="backgroundColor">@color/colorPrimary</item>

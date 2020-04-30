@@ -37,7 +37,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 app:layout_collapseMode="pin"
-                app:title="Bãi gửi xe Đại học Khoa học Tự nhiên"
                 app:titleTextColor="@color/whiteText" />
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
@@ -47,12 +46,12 @@
         style="@style/buttonBackground"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:clickable="true"
         android:focusable="true"
         app:layout_anchor="@+id/app_bar"
         app:layout_anchorGravity="bottom|end"
+        android:layout_gravity="clip_vertical"
         app:srcCompat="@drawable/ic_add" />
 
     <androidx.core.widget.NestedScrollView

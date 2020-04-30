@@ -1,15 +1,18 @@
 package com.example.parkmapproject.parkinglot;
 
-import android.Manifest;
+import android.app.Dialog;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Matrix;
 import android.os.Bundle;
-import android.provider.MediaStore;
+import android.os.Handler;
+import android.provider.MediaStore.Images;
 import android.util.Base64;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
@@ -17,13 +20,13 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
 import com.example.parkmapproject.R;
+import com.example.parkmapproject.database.DatabaseViewModel;
 import com.example.parkmapproject.database.FirebaseDatabaseHelper;
 import com.example.parkmapproject.userrating.UserRating;
 import com.example.parkmapproject.userrating.UserRatingAdapter;
@@ -35,10 +38,18 @@ import java.util.ArrayList;
 import java.util.Map;
 
 public class ParkingLotActivity extends AppCompatActivity {
-    // Current ParkingLot
+    /*
+    Use a database view model to find the current parking lot based on the key sent by the intent to
+    avoid sending too much information through an intent.
+     */
+    private ArrayList<ParkingLot> parkinglotList;
+    private String key;
     private ParkingLot item;
+    private DatabaseViewModel databaseViewModel;
 
-    // Collapsing Toolbar
+    /*
+    Collapsing Toolbar
+     */
     private Toolbar toolbar;
     private ViewPager viewPager;
     ViewPagerAdapter imageAdapter;
@@ -53,7 +64,6 @@ public class ParkingLotActivity extends AppCompatActivity {
     private RecyclerView userRating;
     UserRatingAdapter userRatingAdapter;
     private TextView ratingEmpty;
-    ArrayList<String> encodedStrings;
 
     // ParkingLot information
     String mName;
@@ -61,22 +71,30 @@ public class ParkingLotActivity extends AppCompatActivity {
     float mRating = 0;
     String mPrice;
     ArrayList<UserRating> mUserRating = new ArrayList<>();
+    private InputStream uploadStream;
 
     private static final int PICK_IMAGE = 1;
-    private static final int MY_PERMISSIONS_REQUEST_READ_STORAGE = 1;
-    private boolean mStoragePermissionGranted = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_parking_lot);
-        item = (ParkingLot) getIntent().getSerializableExtra("selectedLot");
-        encodedStrings = getIntent().getStringArrayListExtra("placePhotos");
-
-        fetchParkingLotInfo();
-        fetchToolbarView();
-        fetchInfoView();
-        setInfoToView();
+        databaseViewModel = new ViewModelProvider(this).get(DatabaseViewModel.class);
+        databaseViewModel.getDatabase().observe(this, parkingLots -> {
+            parkinglotList = new ArrayList<>(parkingLots);
+            key = getIntent().getStringExtra("key");
+            if (parkinglotList != null && parkinglotList.size() > 0) {
+                for (ParkingLot pl : parkinglotList)
+                    if (pl.getKey().equals(key)) {
+                        item = pl;
+                        break;
+                    }
+                fetchParkingLotInfo();
+                fetchToolbarView();
+                fetchInfoView();
+                setInfoToView();
+            }
+        });
     }
 
     /*
@@ -121,9 +139,7 @@ public class ParkingLotActivity extends AppCompatActivity {
         mAddress = item.getAddress();
         mPrice = item.getPrice();
         Map<String, UserRating> ratings = item.getRatings();
-        if (encodedStrings != null && encodedStrings.size() > 0)
-            for (String encoded : encodedStrings)
-                placePhotos.add(decodeString(encoded));
+        placePhotos = item.getPlacePhotos();
         if (placePhotos == null || placePhotos.size() == 0) {
             placePhotos = new ArrayList<>();
             placePhotos.add(BitmapFactory.decodeResource(getResources(), R.drawable.no_image));
@@ -144,7 +160,6 @@ public class ParkingLotActivity extends AppCompatActivity {
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle(mName);
         viewPager = findViewById(R.id.gallery_swipe);
         imageAdapter = new ViewPagerAdapter(this, placePhotos);
         viewPager.setAdapter(imageAdapter);
@@ -152,14 +167,17 @@ public class ParkingLotActivity extends AppCompatActivity {
         addImageButton.setOnClickListener(v -> {
             Intent getIntent = new Intent(Intent.ACTION_GET_CONTENT);
             getIntent.setType("image/*");
-            Intent pickIntent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-            pickIntent.setType("image/*");
+            Intent pickIntent = new Intent(Intent.ACTION_PICK);
+            pickIntent.setDataAndType(Images.Media.EXTERNAL_CONTENT_URI, "image/*");
             Intent chooserIntent = Intent.createChooser(getIntent, "Select image");
-            chooserIntent.putExtra(Intent.EXTRA_INITIAL_INTENTS, new Intent[] {pickIntent});
+            chooserIntent.putExtra(Intent.EXTRA_INITIAL_INTENTS, new Intent[]{pickIntent});
             startActivityForResult(chooserIntent, PICK_IMAGE);
         });
     }
 
+    /*
+    Upload the image that users choose from storage to Firebase.
+     */
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -168,19 +186,43 @@ public class ParkingLotActivity extends AppCompatActivity {
                 return;
             try {
                 InputStream stream = getContentResolver().openInputStream(data.getData());
-                Bitmap bitmap = BitmapFactory.decodeStream(stream);
-                new FirebaseDatabaseHelper().updateBitmap(bitmap, item.getKey());
-                placePhotos.add(bitmap);
-                imageAdapter.notifyDataSetChanged();
+                uploadStream = stream;
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
             }
         }
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (uploadStream != null) {
+            Dialog dialog = new Dialog(this, android.R.style.ThemeOverlay_Material_Dialog_Alert);
+            dialog.setContentView(R.layout.upload_progress_dialog);
+            TextView uploading = dialog.findViewById(R.id.uploading);
+            TextView uploadFinish = dialog.findViewById(R.id.finish);
+            Button cancelButton = dialog.findViewById(R.id.cancel_button);
+            ProgressBar progressBar = dialog.findViewById(R.id.progress_bar);
+            dialog.show();
+            Bitmap bitmap = BitmapFactory.decodeStream(uploadStream);
+            bitmap = getResizedBitmap(bitmap, 1000);
+            new FirebaseDatabaseHelper().updateBitmap(bitmap, item.getKey());
+            new Handler().postDelayed((Runnable) () -> {
+                progressBar.setVisibility(View.GONE);
+                uploading.setVisibility(View.GONE);
+                uploadFinish.setVisibility(View.VISIBLE);
+                cancelButton.setBackground(getDrawable(R.drawable.button_background_selector));
+                cancelButton.setOnClickListener(v -> {
+                    dialog.dismiss();
+                    this.finish();
+                });
+            }, 4000);
+        }
+    }
+
     /*
         This function fetch all views that will display the parking lot's information.
-         */
+        */
     private void fetchInfoView() {
         name = findViewById(R.id.title);
         address = findViewById(R.id.address);
@@ -193,7 +235,7 @@ public class ParkingLotActivity extends AppCompatActivity {
     /*
     This function set all retrieved information to the corresponding views and set to default when
     the information needed is missing.
-     */
+    */
     private void setInfoToView() {
         toolbar.setTitle(mName);
         toolbar.setSubtitle(mAddress);
@@ -215,5 +257,21 @@ public class ParkingLotActivity extends AppCompatActivity {
             userRating.setAdapter(userRatingAdapter);
             userRating.setLayoutManager(new LinearLayoutManager(ParkingLotActivity.this));
         }
+    }
+
+    public Bitmap getResizedBitmap(Bitmap bitmap, int newWidth) {
+        int width = bitmap.getWidth();
+        int height = bitmap.getHeight();
+        float scaleWidth = ((float) newWidth) / width;
+        float scaleHeight = scaleWidth;
+        // CREATE A MATRIX FOR THE MANIPULATION
+        Matrix matrix = new Matrix();
+        // RESIZE THE BIT MAP
+        matrix.postScale(scaleWidth, scaleHeight);
+        // "RECREATE" THE NEW BITMAP
+        Bitmap resizedBitmap = Bitmap.createBitmap(
+                bitmap, 0, 0, width, height, matrix, false);
+        bitmap.recycle();
+        return resizedBitmap;
     }
 }

@@ -17,15 +17,16 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
-import com.example.parkmapproject.database.DataAdapter;
 import com.example.parkmapproject.database.DatabaseViewModel;
+import com.example.parkmapproject.database.FirebaseDatabaseHelper;
 import com.example.parkmapproject.parkinglot.ParkingLot;
 import com.example.parkmapproject.parkinglot.ParkingLotArrayAdapter;
 import com.example.parkmapproject.R;
-import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class DashboardFragment extends Fragment {
 
@@ -35,14 +36,13 @@ public class DashboardFragment extends Fragment {
     // Search bar
     private EditText mSearchBar;
     private ImageView clearSearch;
+    private SwipeRefreshLayout refreshLayout;
 
     // Parking lot list
     private RecyclerView mParkingLotRecycler;
     private ParkingLotArrayAdapter mAdapter;
 
     // Database
-    private FirebaseDatabase firebaseDatabase;
-    private DataAdapter mDbHelper;
     private ArrayList<ParkingLot> mParkingLotList;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -52,11 +52,41 @@ public class DashboardFragment extends Fragment {
 
         mSearchBar = root.findViewById(R.id.search_input);
         clearSearch = root.findViewById(R.id.search_clear);
+        refreshLayout = root.findViewById(R.id.refresh);
         mParkingLotRecycler = root.findViewById(R.id.park_list);
 
-        setUpFilterableSearchBar();
+        setupFilterableSearchBar();
+        setupRefreshLayout();
         setupParkingLotDatabase();
         return root;
+    }
+
+    @Override
+    public void onResume() {
+        new FirebaseDatabaseHelper().readParkingLots(new FirebaseDatabaseHelper.DataStatus() {
+            @Override
+            public void DataLoaded(ArrayList<ParkingLot> parkingLots, List<String> keys) {
+                mParkingLotList.clear();
+                mParkingLotList.addAll(parkingLots);
+                mAdapter.notifyDataSetChanged();
+            }
+
+            @Override
+            public void DataIsInserted() {
+
+            }
+
+            @Override
+            public void DataIsUpdated() {
+
+            }
+
+            @Override
+            public void DataIsDeleted() {
+
+            }
+        });
+        super.onResume();
     }
 
     /*
@@ -77,15 +107,44 @@ public class DashboardFragment extends Fragment {
                 if (parkingLot.getPlacePhotos() != null && parkingLot.getPlacePhotos().size() > 0)
                     count++;
             }
-            Log.d("Line112DB", String.valueOf(count));
         });
+    }
+
+    private void setupRefreshLayout() {
+        refreshLayout.setOnRefreshListener(() -> {
+            new FirebaseDatabaseHelper().readParkingLots(new FirebaseDatabaseHelper.DataStatus() {
+                @Override
+                public void DataLoaded(ArrayList<ParkingLot> parkingLots, List<String> keys) {
+                    mParkingLotList.clear();
+                    mParkingLotList.addAll(parkingLots);
+                    mAdapter.notifyDataSetChanged();
+                    refreshLayout.setRefreshing(false);
+                }
+
+                @Override
+                public void DataIsInserted() {
+
+                }
+
+                @Override
+                public void DataIsUpdated() {
+
+                }
+
+                @Override
+                public void DataIsDeleted() {
+
+                }
+            });
+        });
+
     }
 
     /*
     When the user clicks the clear button, the input is emptied. As the user types in, the parking
     lots in the recycler view will be filtered correspondingly.
     */
-    private void setUpFilterableSearchBar() {
+    private void setupFilterableSearchBar() {
         clearSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

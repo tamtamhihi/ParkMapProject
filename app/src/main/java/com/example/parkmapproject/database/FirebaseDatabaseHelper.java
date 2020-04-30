@@ -1,17 +1,14 @@
 package com.example.parkmapproject.database;
 
-import android.app.ProgressDialog;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Matrix;
 import android.util.Base64;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 
 import com.example.parkmapproject.parkinglot.ParkingLot;
 import com.example.parkmapproject.userrating.UserRating;
-import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -27,7 +24,6 @@ import java.util.Map;
 public class FirebaseDatabaseHelper {
     private FirebaseDatabase mDatabase;
     private DatabaseReference mReferenceParkingLots;
-    private DatabaseReference photoReference;
     private ArrayList<ParkingLot> parkingLots = new ArrayList<>();
 
     public interface DataStatus {
@@ -46,6 +42,10 @@ public class FirebaseDatabaseHelper {
         mReferenceParkingLots.keepSynced(true);
     }
 
+    /*
+    Load all parking lot information including name, address, latitude, longitude, photos
+    and reviews.
+     */
     public void readParkingLots(final DataStatus dataStatus) {
         mReferenceParkingLots.addValueEventListener(new ValueEventListener() {
             @Override
@@ -77,19 +77,23 @@ public class FirebaseDatabaseHelper {
         });
     }
 
+    /*
+    This function uploads placeId of new parking lots to Firebase.
+     */
     public void updateParkingLots(ArrayList<ParkingLot> parkingLots) {
         Map<String, Object> parkingLotUpdates = new HashMap<>();
         for (ParkingLot parkingLot : parkingLots) {
             parkingLotUpdates.put(parkingLot.getKey() + "/placeId", parkingLot.getPlaceId());
             new FirebaseStorageHelper().uploadPlacePhotos(parkingLot);
-            //parkingLotUpdates.put(parkingLot.getKey() + "/placePhotos", parkingLot.getPlacePhotos());
-            //parkingLotUpdates.put(parkingLot.getKey() + "/userRatings", parkingLot.getUserRatings());
         }
         mReferenceParkingLots.updateChildren(parkingLotUpdates);
     }
 
+    /*
+    This function resizes a bitmap, encodes it and uploads it to Firebase.
+     */
     public void updateBitmap(Bitmap originalBitmap, String key) {
-        Bitmap bitmap = getResizedBitmap(originalBitmap, 300);
+        Bitmap bitmap = getResizedBitmap(originalBitmap, 1000);
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         bitmap.compress(Bitmap.CompressFormat.PNG, 100, baos);
         bitmap.recycle();
@@ -98,6 +102,9 @@ public class FirebaseDatabaseHelper {
         mReferenceParkingLots.child(key).child("encodedPhotos").push().setValue(encodedBitmap);
     }
 
+    /*
+    This function uploads a new user rating/review to Firebase.
+     */
     public void updateUserRating(UserRating userRating, String key) {
         String newRatingKey = mReferenceParkingLots.child(key).child("ratings").push().getKey();
         Map<String, Object> updateNewRating = new HashMap<>();
@@ -127,12 +134,18 @@ public class FirebaseDatabaseHelper {
         }
     }
 
+    /*
+    This function decodes the string from Firebase into a bitmap on downloading.
+     */
     private Bitmap decodeString(String encodedImage) {
         byte[] decodedImage = Base64.decode(encodedImage, Base64.DEFAULT);
         Bitmap decodedByte = BitmapFactory.decodeByteArray(decodedImage, 0, decodedImage.length);
         return decodedByte;
     }
 
+    /*
+    This function resizes the bitmap.
+     */
     public Bitmap getResizedBitmap(Bitmap bitmap, int newWidth) {
         int width = bitmap.getWidth();
         int height = bitmap.getHeight();
@@ -142,7 +155,6 @@ public class FirebaseDatabaseHelper {
         Matrix matrix = new Matrix();
         // RESIZE THE BIT MAP
         matrix.postScale(scaleWidth, scaleHeight);
-
         // "RECREATE" THE NEW BITMAP
         Bitmap resizedBitmap = Bitmap.createBitmap(
                 bitmap, 0, 0, width, height, matrix, false);

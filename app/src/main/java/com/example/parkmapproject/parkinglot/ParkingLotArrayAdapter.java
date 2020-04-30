@@ -3,7 +3,6 @@ package com.example.parkmapproject.parkinglot;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.os.Bundle;
 import android.util.Base64;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,12 +17,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.parkmapproject.R;
-import com.example.parkmapproject.database.FirebaseStorageHelper;
-import com.example.parkmapproject.userrating.UserRating;
 
 import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
-import java.util.Objects;
 
 public class ParkingLotArrayAdapter extends
         RecyclerView.Adapter<ParkingLotArrayAdapter.ParkingLotViewHolder>
@@ -115,26 +111,8 @@ public class ParkingLotArrayAdapter extends
         public void onClick(View v) {
             ParkingLot clickedItem = mParkingLotList.get(getAdapterPosition());
             Intent intent = new Intent(context, ParkingLotActivity.class);
-            Bundle bundle = new Bundle();
-            bundle.putSerializable("selectedLot", clickedItem);
-            ArrayList<Bitmap> placePhotos = clickedItem.getPlacePhotos();
-            if (placePhotos != null && placePhotos.size() > 0) {
-                ArrayList<String> encodedStrings = new ArrayList<>();
-                for (Bitmap bitmap : placePhotos) {
-                    encodedStrings.add(encodeBitmap(bitmap));
-                }
-                bundle.putStringArrayList("placePhotos", encodedStrings);
-            }
-            ArrayList<UserRating> userRatings = clickedItem.getUserRatings();
-            if (userRatings != null && userRatings.size() > 0) {
-                bundle.putInt("numRatings", userRatings.size());
-                for (int i = 0; i < userRatings.size(); ++i) {
-                    bundle.putSerializable("rating" + String.valueOf(i), userRatings.get(i));
-                }
-            }
-            intent.putExtras(bundle);
+            intent.putExtra("key", clickedItem.getKey());
             context.startActivity(intent);
-
         }
 
         private String encodeBitmap(Bitmap bitmap) {

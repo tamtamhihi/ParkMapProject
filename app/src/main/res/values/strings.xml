@@ -53,5 +53,30 @@
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="loading_message">Loading database...</string>
+    <string name="logo">logo</string>
+    <string name="about_us_title">About Us</string>
+    <string name="app_overall_title">About Us</string>
+    <string name="app_overall">ParkMap is a product developed by a group of freshmen from the Advanced Program in Computer Science, class of 2023, of Ho Chi Minh University of Science. This product is due to take part in the Solution Challenge 2020 hosted by Google Developer Students Club Community.</string>
+    <string name="app_purpose_title">Purpose</string>
+    <string name="app_purpose">Based on the local massive usage of personal motorbikes, we found the need for a light-weight application that can help people locate the nearest parking lot so as to avoid wasting their time under the humid weather of Ho Chi Minh City.</string>
+    <string name="app_help_title">Help Us</string>
+    <string name="app_help">We would appreciate your help to improve our application performance or broaden our database by contacting us directly at parkmap@gmail.com.</string>
+    <string name="solution_challenge">solution challenge</string>
+    <string name="motorbikes">motorbikes</string>
+    <string name="feedback_prompt">Give feedback</string>
+    <string name="no_location_title">Can\'t find location</string>
+    <string name="no_location_message">We can\'t find your current location. Please check for permission again or restart app.</string>
+    <string name="no_location_button">OK</string>
+    <string name="me_how_to">How to use</string>
+    <string name="how_to_title">How to use</string>
+    <string name="from_home_tab">From Home Tab</string>
+    <string name="choose_place">- Find and choose a place from search bar:</string>
+    <string name="gps">- Click the GPS Icon to locate you:</string>
+    <string name="from_dashboard_tab">From Dashboard Tab</string>
+    <string name="search">- Search your keyword from the whole database:</string>
+    <string name="feedback_alert_title">Lose information</string>
+    <string name="feedback_alert_msg">You haven\'t sent your feedback yet. Going back will lose your information. Are you sure?</string>
+    <string name="feedback_alert_negative_button">Go back anyway</string>
+    <string name="feedback_alert_positive_button">Stay here</string>
 
 </resources>
